@@ -18,6 +18,7 @@ for(var i=0;i<squares.length;i++){
     squares[i].addEventListener("click",function(){
         if(this.style.backgroundColor===selectedColor){
             result.textContent="Correct!";
+            reset.textContent="Play Again";
             h1.style.backgroundColor=selectedColor;
             colorAll();
         }
@@ -42,7 +43,7 @@ reset.addEventListener("click",function(){
 
 //reset function
 function resetFun(){
-     //change 'play again' to 'new game' in reset button
+    //change 'play again' to 'new game' in reset button
     reset.textContent="new colors";
     //set the result space to empty
     result.textContent="";
