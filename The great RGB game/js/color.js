@@ -42,6 +42,8 @@ reset.addEventListener("click",function(){
 
 //reset function
 function resetFun(){
+     //change 'play again' to 'new game' in reset button
+    reset.textContent="new colors";
     //set the result space to empty
     result.textContent="";
     //default h1 bg color
